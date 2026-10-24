@@ -10,22 +10,16 @@ public class DeleteMiddle {
     }
 
     static Node deleteMiddle(Node head) {
-
         int count = 0;
         Node temp = head;
-
         while (temp != null) {
             count++;
             temp = temp.next;
         }
-
         if (count == 1)
             return null;
-
         int middle = count / 2;
-
         temp = head;
-
         for (int i = 1; i < middle; i++) {
             temp = temp.next;
         }
